@@ -21,7 +21,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
 	.state('showPlane', {
 		url: '/inventory/:id',
 		templateUrl: '/views/showPlane.html',
-		controller: 'ShowCtrl'
+		controller: 'InventoryCtrl'
 	});
 
 	$locationProvider.html5Mode(true);

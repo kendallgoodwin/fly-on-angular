@@ -17,6 +17,11 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
 	.state('404', {
 		url: '/404',
 		templateUrl: '/views/404.html'
+	})
+	.state('showPlane', {
+		url: '/inventory/:id',
+		templateUrl: '/views/showPlane.html',
+		controller: 'ShowCtrl'
 	});
 
 	$locationProvider.html5Mode(true);

@@ -11,8 +11,9 @@ Engines <input type="integer" ng-model="engines">
 No planes in inventory.
 </div>
 
-<div class="well" ng-repeat="plane in planes">
+<div class="well well-lg" ng-repeat="plane in planes track by $index">
 	Manufacturer: {{plane.manufacturer}}
 	Model: {{plane.model}}
 	Engines: {{plane.engines}}
+	<button class="btn btn-primary" ng-click="showPlane($index)">Show Plane</button>
 </div>
